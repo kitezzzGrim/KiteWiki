@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [KiteWiki](readme/README.md)
+* [KiteWiki](<README (1).md>)
   * [渗透测试](readme/shen-tou-ce-shi/README.md)
     * [信息收集](readme/shen-tou-ce-shi/xin-xi-shou-ji/README.md)
       * [敏感信息收集](readme/shen-tou-ce-shi/xin-xi-shou-ji/min-gan-xin-xi-shou-ji/README.md)
