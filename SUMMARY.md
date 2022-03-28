@@ -40,3 +40,4 @@
     * [MISC](readme-1/ctf-bi-ji/misc.md)
     * [Crypto](readme-1/ctf-bi-ji/crypto.md)
     * [Web](readme-1/ctf-bi-ji/web.md)
+  * [脚本开发](readme-1/jiao-ben-kai-fa.md)
