@@ -16,6 +16,7 @@
       * [指纹识别](readme/shen-tou-ce-shi/xin-xi-shou-ji/zhi-wen-shi-bie/README.md)
         * [CMS识别](readme/shen-tou-ce-shi/xin-xi-shou-ji/zhi-wen-shi-bie/cms-shi-bie.md)
         * [WAF识别](readme/shen-tou-ce-shi/xin-xi-shou-ji/zhi-wen-shi-bie/waf-shi-bie.md)
+    * [WEB漏洞](readme-1/shen-tou-ce-shi/web-lou-dong.md)
     * [安全工具](readme/shen-tou-ce-shi/an-quan-gong-ju.md)
       * [Xray](readme/shen-tou-ce-shi/an-quan-gong-ju/xray.md)
       * [Cobaltstrike](readme/shen-tou-ce-shi/an-quan-gong-ju/cobaltstrike.md)
