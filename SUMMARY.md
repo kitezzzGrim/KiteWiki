@@ -36,3 +36,7 @@
     * [思路技巧](readme/shen-tou-ce-shi/si-lu-ji-qiao/README.md)
       * [云主机AK-SK泄露利用](readme/shen-tou-ce-shi/si-lu-ji-qiao/yun-zhu-ji-aksk-xie-lou-li-yong.md)
   * [免杀测试](readme-1/mian-sha-ce-shi.md)
+  * [CTF笔记](readme-1/ctf-bi-ji/README.md)
+    * [MISC](readme-1/ctf-bi-ji/misc.md)
+    * [Crypto](readme-1/ctf-bi-ji/crypto.md)
+    * [Web](readme-1/ctf-bi-ji/web.md)
