@@ -1,5 +1,27 @@
 # 子域名信息收集
 
+### layer子域名挖掘
+
+工具地址：https://github.com/lijiejie/subDomainsBrute
+
+`pip install aiodns` `python3 subDomainsBrute.py iflytek.com`
+
+上面自动化整理子域名：
+
+```py
+python3 subdomain-collection.py 1.txt
+# 输出output.txt
+```
+
+### OneForall
+
+工具地址：https://github.com/shmilylty/OneForAll
+
+```bash
+python3 oneforall.py --target example.com run
+python3 oneforall.py --targets ./example.txt run
+```
+
 ### 在线接口
 
 ```
