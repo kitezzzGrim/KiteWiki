@@ -2,6 +2,8 @@
 
 ### 常见弱口令
 
+![image](./img/弱口令-用户名.png)
+
 * admin/admin
 * admin/123456
 * admin/admin123
@@ -22,3 +24,5 @@
 可查看公示平台寻找信用代码，如：/publicity往往可以看到目标的统一社会信用代码证
 
 如9132062175507995XE/abc123
+
+![image](./img/shehuixinyong.png)
