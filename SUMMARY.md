@@ -45,3 +45,6 @@
     * [Web](readme-1/ctf-bi-ji/web.md)
   * [脚本开发](readme-1/jiao-ben-kai-fa.md)
   * [工具分享](readme-1/gong-ju-fen-xiang.md)
+  * [代码审计](readme-1/dai-ma-shen-ji/README.md)
+    * [PHP](readme-1/dai-ma-shen-ji/php/README.md)
+      * [通达](readme-1/dai-ma-shen-ji/php/tong-da.md)
