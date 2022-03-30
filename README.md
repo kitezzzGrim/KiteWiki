@@ -1,19 +1,92 @@
 # Introduction
 
-
-
 ## Good Future
-
-> 很喜欢的一句话：为了心中的美好，不妥协直至变老
 
 * About me
   * 一个戴助听器 And 喜欢偷学好玩东西 Boy
-  * 目前正在学习SRC 业务逻辑漏洞 的相关知识
-* Lists of Projects
-  * [CTF-Note](https://github.com/kitezzzGrim/CTF-Note) -记录CTF知识、刷题记录、工具等
-  * [tongda-kite](https://github.com/kitezzzGrim/tongda-exp) - Python编写的多个通达常见漏洞exp
-  * [KiteCollection](https://github.com/kitezzzGrim/KiteCollection) - IP格式整理脚本
-  * [PHP-Audit-Learn](https://github.com/kitezzzGrim/PHP-Audit-Learn) - PHP代码审计总结
-  * [KiteWaterPDF](https://github.com/kitezzzGrim/kiteWaterPDF) - 自动、批量、根据文件名生成水印，同时给PDF添加水印的脚本
-* Contact me
-  * 292826387@qq.com
+  * Github: https://github.com/kitezzzGrim
+
+* 下面是我很喜欢的一首歌
+```
+充满鲜花的世界到底在哪里
+
+如果它真的存在那么我一定会去
+
+我想在那里最高的山峰矗立
+
+不在乎它是不是悬崖峭壁
+
+用力活着用力爱哪怕肝脑涂地
+
+不求任何人满意只要对得起自己
+
+关于理想我从来没选择放弃
+
+即使在灰头土脸的日子里
+
+也许我没有天分
+
+但我有梦的天真
+
+我将会去证明用我的一生
+
+也许我手比较笨
+
+但我愿不停探寻
+
+付出所有的青春不留遗憾
+
+向前跑迎著冷眼和嘲笑
+
+生命的广阔不历经磨难怎能感到
+
+命运它无法让我们跪地求饶
+
+就算鲜血洒满了怀抱
+
+继续跑 带着赤子的骄傲
+
+生命的闪耀不坚持到底怎能看到
+
+与其苟延残喘不如纵情燃烧吧
+
+有一天会再发芽
+
+未来迷人绚烂总在向我召唤
+
+哪怕只有痛苦作伴也要勇往直前
+
+我想在那里最蓝的大海扬帆
+
+绝不管自己能不能回还
+
+失败后郁郁寡欢
+
+那是懦夫的表现
+
+只要一息尚存请握紧双拳
+
+在天色破晓之前
+
+我们要更加勇敢
+
+等待日出时最耀眼的瞬间
+
+向前跑迎著冷眼和嘲笑
+
+生命的广阔不历经磨难怎能感到
+
+命运它无法让我们跪地求饶
+
+就算鲜血洒满了怀抱
+
+继续跑带着赤子的骄傲
+
+生命的闪耀不坚持到底怎能看到
+
+与其苟延残喘不如纵情燃烧吧
+
+为了心中的美好
+
+不妥协直到变老
+```
