@@ -6,6 +6,7 @@
     * [信息收集](readme/shen-tou-ce-shi/xin-xi-shou-ji/README.md)
       * [资产收集](readme/shen-tou-ce-shi/xin-xi-shou-ji/zi-chan-shou-ji/README.md)
         * [子域名信息收集](readme/shen-tou-ce-shi/xin-xi-shou-ji/zi-yu-ming-xin-xi-shou-ji.md)
+        * [APP小程序信息收集](readme-1/shen-tou-ce-shi/xin-xi-shou-ji/zi-chan-shou-ji/app-xiao-cheng-xu-xin-xi-shou-ji.md)
       * [敏感信息收集](readme/shen-tou-ce-shi/xin-xi-shou-ji/min-gan-xin-xi-shou-ji/README.md)
         * [Github信息收集](readme/shen-tou-ce-shi/xin-xi-shou-ji/min-gan-xin-xi-shou-ji/github-xin-xi-shou-ji.md)
         * [JS信息收集](readme/shen-tou-ce-shi/xin-xi-shou-ji/js-xin-xi-shou-ji.md)

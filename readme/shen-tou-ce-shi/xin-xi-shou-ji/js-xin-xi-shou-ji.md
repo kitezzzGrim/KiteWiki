@@ -1,5 +1,9 @@
 # JS信息收集
 
+### FindSomething
+
+快速获取JS中的URL链接、接口、手机号、IP、域名等，无需一个个打开JS查看
+
 ### JSFinder
 
 项目地址：https://github.com/Threezh1/JSFinder
