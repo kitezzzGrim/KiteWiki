@@ -15,6 +15,7 @@
         * [端口信息收集](readme/shen-tou-ce-shi/xin-xi-shou-ji/duan-kou-xin-xi-shou-ji.md)
         * [Google信息收集](readme/shen-tou-ce-shi/xin-xi-shou-ji/min-gan-xin-xi-shou-ji/google-hacking.md)
         * [网络空间资产信息收集](readme-1/shen-tou-ce-shi/xin-xi-shou-ji/min-gan-xin-xi-shou-ji/wang-luo-kong-jian-zi-chan-xin-xi-shou-ji.md)
+        * [APK敏感信息收集](readme-1/shen-tou-ce-shi/xin-xi-shou-ji/min-gan-xin-xi-shou-ji/apk-min-gan-xin-xi-shou-ji.md)
       * [指纹识别](readme/shen-tou-ce-shi/xin-xi-shou-ji/zhi-wen-shi-bie/README.md)
         * [CMS识别](readme/shen-tou-ce-shi/xin-xi-shou-ji/zhi-wen-shi-bie/cms-shi-bie.md)
         * [WAF识别](readme/shen-tou-ce-shi/xin-xi-shou-ji/zhi-wen-shi-bie/waf-shi-bie.md)
