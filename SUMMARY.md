@@ -41,6 +41,7 @@
           * [记一次帆软组合拳getshell](readme-1/shen-tou-ce-shi/shi-zhan-an-li/ge-ren-an-li/ge-ren-an-li/ji-yi-ci-fan-ruan-zu-he-quan-getshell.md)
         * [玩家案例](readme-1/shen-tou-ce-shi/shi-zhan-an-li/ge-ren-an-li/wan-jia-an-li/README.md)
           * [SRC](readme-1/shen-tou-ce-shi/shi-zhan-an-li/ge-ren-an-li/wan-jia-an-li/src.md)
+          * [渗透](readme-1/shen-tou-ce-shi/shi-zhan-an-li/ge-ren-an-li/wan-jia-an-li/shen-tou.md)
       * [思路技巧](readme-1/shen-tou-ce-shi/shi-zhan-an-li/si-lu-ji-qiao/README.md)
         * [云主机AK-SK泄露利用](readme-1/shen-tou-ce-shi/shi-zhan-an-li/si-lu-ji-qiao/yun-zhu-ji-aksk-xie-lou-li-yong.md)
   * [免杀测试](readme-1/mian-sha-ce-shi.md)
