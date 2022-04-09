@@ -44,6 +44,8 @@
           * [渗透](readme-1/shen-tou-ce-shi/shi-zhan-an-li/ge-ren-an-li/wan-jia-an-li/shen-tou.md)
       * [思路技巧](readme-1/shen-tou-ce-shi/shi-zhan-an-li/si-lu-ji-qiao/README.md)
         * [云主机AK-SK泄露利用](readme-1/shen-tou-ce-shi/shi-zhan-an-li/si-lu-ji-qiao/yun-zhu-ji-aksk-xie-lou-li-yong.md)
+    * [横向移动](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/README.md)
+      * [Linux提权](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/linux-ti-quan.md)
   * [免杀测试](readme-1/mian-sha-ce-shi.md)
   * [脚本开发](readme-1/jiao-ben-kai-fa.md)
   * [代码审计](readme-1/dai-ma-shen-ji/README.md)
