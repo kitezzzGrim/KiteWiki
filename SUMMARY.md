@@ -56,3 +56,6 @@
     * [MISC](readme-1/ctf-bi-ji/misc.md)
     * [Crypto](readme-1/ctf-bi-ji/crypto.md)
     * [Web](readme-1/ctf-bi-ji/web.md)
+  * [靶机渗透](readme-1/ba-ji-shen-tou/README.md)
+    * [Vulnhub](readme-1/ba-ji-shen-tou/vulnhub/README.md)
+      * [DC 1](readme-1/ba-ji-shen-tou/vulnhub/dc-1.md)
