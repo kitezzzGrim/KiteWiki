@@ -1,6 +1,59 @@
 # Linux提权
 
+## 前言
+
+提权本质：一方面是信息收集，另一方面是对内核漏洞的掌握情况
+
+## 基础信息收集
+
+```bash
+# 查看发行版
+
+# 查看内核版本
+
+```
+
+## 提权操作
+
+### 内核漏洞提权
+
+1.查看发行版以及内核版本
+```bash
+cat /etc/issue
+cat /etc/*-release
+
+uname -a
+```
+
+2.kali查找漏洞
+```
+searchsploit linux 3.10 CentOS Linux 7
+```
+### SUID提权
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 参考文章
 - https://wiki.xazlsec.com/project-9/doc-730/
 - https://xz.aliyun.com/t/7924
 - https://shng.fun/posts/2021-01-23-%E5%AD%A6%E4%B9%A0-Linux%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8F%90%E6%9D%83%E6%96%B9%E6%B3%95.html
 - https://www.freebuf.com/articles/web/280398.html
+- https://www.hacking8.com/tiquan/other/Linux%E6%8F%90%E6%9D%83.html
