@@ -60,3 +60,4 @@
   * [靶机渗透](readme-1/ba-ji-shen-tou/README.md)
     * [Vulnhub](readme-1/ba-ji-shen-tou/vulnhub/README.md)
       * [DC 1](readme-1/ba-ji-shen-tou/vulnhub/dc-1.md)
+      * [DC 2](readme-1/ba-ji-shen-tou/vulnhub/dc-2.md)
