@@ -16,5 +16,5 @@
 * Contact me
   * 292826387@qq.com
 
-![kitezzzGrim](https://github-readme-stats.vercel.app/api?username=kitezzzGrim\&theme=react\&show\_icons=true)
+<img src="https://github-readme-stats.vercel.app/api?username=kitezzzGrim&#x26;theme=react&#x26;show_icons=true" alt="kitezzzGrim" data-size="original">
 
