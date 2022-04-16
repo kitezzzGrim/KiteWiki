@@ -2,7 +2,7 @@
 
 ### 常见弱口令
 
-![image](./img/弱口令-用户名.png)
+![image](../img/弱口令-用户名.png)
 
 * admin/admin
 * admin/123456
@@ -17,7 +17,7 @@
 
 剩下burpsuite爆破
 
-****
+***
 
 ### **案例1-社会信用代码**
 
@@ -25,4 +25,4 @@
 
 如9132062175507995XE/abc123
 
-![image](./img/shehuixinyong.png)
+![image](../img/shehuixinyong.png)
