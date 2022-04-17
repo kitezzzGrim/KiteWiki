@@ -10,3 +10,9 @@
 - 手把手教你Linux提权：https://mp.weixin.qq.com/s/-xbTJcj4zmLGSPiEEY7IHg
 - 内网渗透初探 | 小白简单学习内网渗透 :https://mp.weixin.qq.com/s/A_K4KsIgJ7DVjWWnIs95QA
 - 免杀技术有一套（免杀方法大集结）(Anti-AntiVirus)：https://mp.weixin.qq.com/s/HjaOgY_ZGjxZaxgcgm2QYg
+
+
+## javascript
+
+- [前端JavaScript渗透测试步步为营](https://www.freebuf.com/vuls/255640.html)
+- [通宵也要挖到这个高危SSRF漏洞！！！](https://mp.weixin.qq.com/s/i0JVsYCTmXqC9KTQBstAhA)
