@@ -7,9 +7,7 @@
 ## 基础信息收集
 
 ```bash
-# 查看发行版本
-
-# 查看内核版本
+suid命令提权查询：https://gtfobins.github.io/
 ```
 
 ## 提权操作
