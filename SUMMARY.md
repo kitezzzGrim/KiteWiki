@@ -49,7 +49,6 @@
         * [云主机AK-SK泄露利用](readme-1/shen-tou-ce-shi/shi-zhan-an-li/si-lu-ji-qiao/yun-zhu-ji-aksk-xie-lou-li-yong.md)
     * [横向移动](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/README.md)
       * [Linux提权](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/linux-ti-quan.md)
-  * [云安全](readme-1/mian-sha-ce-shi.md)
   * [编程语言](readme-1/jiao-ben-kai-fa/README.md)
     * [脚本开发](readme-1/jiao-ben-kai-fa/jiao-ben-kai-fa/README.md)
       * [网络通信](readme-1/jiao-ben-kai-fa/jiao-ben-kai-fa/wang-luo-tong-xin.md)
