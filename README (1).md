@@ -2,6 +2,8 @@
 description: 个人知识库
 ---
 
+- 团队知识库：https://home.ffffffff0x.com/
+
 # KiteWiki
 
 - 每日社区
