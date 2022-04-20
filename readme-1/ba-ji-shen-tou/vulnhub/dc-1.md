@@ -6,6 +6,10 @@
 
 ## 知识点
 
+- drupal漏洞利用
+- linux提权-suid提权
+- hashcat跑密码
+
 ## 信息收集
 
 1.IP探测
