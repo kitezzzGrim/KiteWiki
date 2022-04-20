@@ -49,11 +49,10 @@ find / -user root -perm -4000 -print 2>/dev/null
 find / -user root -perm -4000 -exec ls -ldb {} ;
 ```
 
-<<<<<<< HEAD
-[image](../../ba-ji-shen-tou/vulnhub/img/vulnhub-dc1-13.png)
-=======
-<<<<<<< HEAD ![image](img/vulnhub-dc1-13.png)
->>>>>>> 2a4cace3e5f36e0989549a5e924122da37b1a632
+
+![image](../../ba-ji-shen-tou/vulnhub/img/vulnhub-dc1-13.png)
+
+![image](img/vulnhub-dc1-13.png)
 
 #### find提权
 
