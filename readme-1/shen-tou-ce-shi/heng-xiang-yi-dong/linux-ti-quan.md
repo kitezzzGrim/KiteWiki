@@ -14,18 +14,22 @@ suid命令提权查询：https://gtfobins.github.io/
 
 ### 内核漏洞提权
 
+具体案例可参考DC-3内核提权
+
 1.查看发行版以及内核版本
 
 ```bash
 cat /etc/issue
 cat /etc/*-release
 
+lsb_release -a
 uname -a
 ```
 
 2.kali查找漏洞
 
 ```
+searchsploit ubuntu 16.04 4.4.x
 searchsploit linux 3.10 CentOS Linux 7
 ```
 

