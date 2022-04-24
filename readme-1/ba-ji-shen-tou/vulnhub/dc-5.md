@@ -6,6 +6,10 @@
 
 ## 知识点
 
+- wfuzz参数爆破
+- nginx日志投毒getshell
+- suid-screen提权
+
 ## 信息收集
 
 ```bash
@@ -119,6 +123,8 @@ whoami
 ```
 
 至此提权成功
+
+![](./img/vulnhub-dc5-8.png)
 
 
 ## 参考链接
