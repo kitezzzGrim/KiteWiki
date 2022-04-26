@@ -71,4 +71,5 @@
       * [DC 6](readme-1/ba-ji-shen-tou/vulnhub/dc-6.md)
       * [DC 7](readme-1/ba-ji-shen-tou/vulnhub/dc-7.md)
       * [DC 8](readme-1/ba-ji-shen-tou/vulnhub/dc-8.md)
+      * [DC 9](readme-1/ba-ji-shen-tou/vulnhub/dc-9.md)
     * [Pikachu](readme-1/ba-ji-shen-tou/pikachu.md)
