@@ -26,6 +26,7 @@
         * [XSS漏洞](readme-1/shen-tou-ce-shi/web-lou-dong/web-an-quan/xss-lou-dong.md)
         * [SQL漏洞](readme-1/shen-tou-ce-shi/web-lou-dong/web-an-quan/sql-lou-dong.md)
         * [CSRF漏洞](readme-1/shen-tou-ce-shi/web-lou-dong/web-an-quan/csrf-lou-dong.md)
+        * [XXE漏洞](readme-1/shen-tou-ce-shi/web-lou-dong/web-an-quan/xxe-lou-dong.md)
       * [端口安全](readme-1/shen-tou-ce-shi/web-lou-dong/duan-kou-an-quan.md)
     * [安全工具](readme/shen-tou-ce-shi/an-quan-gong-ju.md)
       * [Xray](readme/shen-tou-ce-shi/an-quan-gong-ju/xray.md)
