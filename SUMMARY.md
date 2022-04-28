@@ -54,6 +54,8 @@
       * [系统权限提升](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/xi-tong-quan-xian-ti-sheng/README.md)
         * [Linux](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/linux-ti-quan.md)
         * [Windows](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/xi-tong-quan-xian-ti-sheng/windows.md)
+      * [数据库提权](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/shu-ju-ku-ti-quan/README.md)
+        * [Mysql](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/shu-ju-ku-ti-quan/mysql.md)
   * [编程语言](readme-1/jiao-ben-kai-fa/README.md)
     * [脚本开发](readme-1/jiao-ben-kai-fa/jiao-ben-kai-fa/README.md)
       * [网络通信](readme-1/jiao-ben-kai-fa/jiao-ben-kai-fa/wang-luo-tong-xin.md)
