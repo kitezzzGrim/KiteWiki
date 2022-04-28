@@ -44,7 +44,7 @@ cat /etc/anacrontab
 cat /var/spool/cron/crontabs/root
 ```
 
-![image](../../img/jihuarenwu-1.png)
+![image](../../../img/jihuarenwu-1.png)
 
 ### 交互式shell
 
@@ -133,9 +133,9 @@ find / -user root -perm -4000 -print 2>/dev/null
 find / -user root -perm -4000 -exec ls -ldb {} ;
 ```
 
-![image](../../img/vulnhub-dc1-13.png)
+![image](../../../../../ba-ji-shen-tou/vulnhub/img/vulnhub-dc1-13.png)
 
-![image](../../../../ba-ji-shen-tou/vulnhub/img/vulnhub-dc1-13.png)
+![image](../../../img/vulnhub-dc1-13.png)
 
 #### find提权
 
@@ -279,7 +279,7 @@ whoami
 sudo teehee -a /etc/passwd
 ```
 
-![image](../../img/vulnhub-dc4-1.png)
+![image](../../../img/vulnhub-dc4-1.png)
 
 ## 参考文章
 

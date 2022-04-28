@@ -6,9 +6,9 @@
 
 ## 知识点
 
-- drupal漏洞利用
-- linux提权-suid提权
-- hashcat跑密码
+* drupal漏洞利用
+* linux提权-suid提权
+* hashcat跑密码
 
 ## 信息收集
 
@@ -177,7 +177,7 @@ ls /root
 cat /root/thefinalflag.txt
 ```
 
-![image](../../shen-tou-ce-shi/heng-xiang-yi-dong/img/vulnhub-dc1-13.png) ![image](img/vulnhub-dc1-14.png)
+![image](img/vulnhub-dc1-13.png) ![image](img/vulnhub-dc1-14.png)
 
 提权成功，得到flag5
 
