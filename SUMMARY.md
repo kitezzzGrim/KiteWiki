@@ -79,4 +79,5 @@
       * [DC 7](readme-1/ba-ji-shen-tou/vulnhub/dc-7.md)
       * [DC 8](readme-1/ba-ji-shen-tou/vulnhub/dc-8.md)
       * [DC 9](readme-1/ba-ji-shen-tou/vulnhub/dc-9.md)
+      * [Sumo 脏牛提权](readme-1/ba-ji-shen-tou/vulnhub/sumo-zang-niu-ti-quan.md)
     * [Pikachu](readme-1/ba-ji-shen-tou/pikachu.md)
