@@ -133,9 +133,9 @@ find / -user root -perm -4000 -print 2>/dev/null
 find / -user root -perm -4000 -exec ls -ldb {} ;
 ```
 
-![image](../../../../../ba-ji-shen-tou/vulnhub/img/vulnhub-dc1-13.png)
-
 ![image](../../../img/vulnhub-dc1-13.png)
+
+![image](../../../../../ba-ji-shen-tou/vulnhub/img/vulnhub-dc1-13.png)
 
 #### find提权
 
