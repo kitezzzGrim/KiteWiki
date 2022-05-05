@@ -9,6 +9,7 @@
   * 3hdow师傅：https://github.com/3had0w/Fuzzing-Dicts
   * gh0stkey师傅：https://github.com/gh0stkey/Web-Fuzzing-Box
   * SuperWordlsit：https://github.com/fuzz-security/SuperWordlist
+  * [Dictionary-Of-Pentesting](https://github.com/insightglacier/Dictionary-Of-Pentesting)：[https://github.com/insightglacier/Dictionary-Of-Pentesting](https://github.com/insightglacier/Dictionary-Of-Pentesting)
 * 专项字典库：
   * SQL字典库: https://github.com/payloadbox/sql-injection-payload-list
   * XSS字典库: https://github.com/payloadbox/xss-payload-list
