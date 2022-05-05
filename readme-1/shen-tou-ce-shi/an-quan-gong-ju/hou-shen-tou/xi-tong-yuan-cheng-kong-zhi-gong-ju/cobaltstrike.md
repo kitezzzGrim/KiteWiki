@@ -5,7 +5,11 @@
   * [使用](cobaltstrike.md#使用)
     * [启动](cobaltstrike.md#启动)
     * [上线一个目标](cobaltstrike.md#上线一个目标)
+      * [Windows上线相关方式](cobaltstrike.md#Windows上线相关方式)
+      * [Liunx相关上线方式](cobaltstrike.md#Liunx相关上线方式)
+        * [利用Cross2上线linux主机](cobaltstrike.md#利用Cross2上线linux主机)
 
+*
 ## 简介
 
 Cobalt Strike是一款渗透测试神器，常被业界人称为CS神器。Cobalt Strike已经不再使用MSF而是作为单独的平台使用，它分为客户端与服务端，服务端是一个，客户端可以有多个，可被团队进行分布式协团操作。 Cobalt Strike集成了端口转发、扫描多模式端口Listener、Windows exe程序生成、Windows dll动态链接库生成、java程序生成、office宏代码生成，包括站点克隆获取浏览器的相关信息等。
@@ -86,6 +90,14 @@ shell whoami #命令执行需要前面加上shell
 sleep 1
 ```
 
+#### Windows上线相关方式
+
+#### Linux上线相关方式
+
+##### 利用Cross2上线linux主机
+
 ## 参考链接
 
 * ffffffff0x团队-1earn的CobaltStrike教程：https://github.com/ffffffff0x/1earn/blob/b068ec66544975f03160088fcca375e95768b198/1earn/Security/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%85%B7/CobaltStrike.md
+
+* https://www.cxyzjd.com/article/qq_41874930/109176632#1Cross2linux_20
