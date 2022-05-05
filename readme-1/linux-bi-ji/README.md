@@ -18,6 +18,7 @@
 * rz文件传输
 * find
 * nuclei
+* 查看文件
 
 ### firewalld
 
@@ -427,4 +428,14 @@ nuclei -l urls.txt -t ./template/swagger-api.yaml -o hw1.txt
 nuclei -l zhengfu.txt -t ./template/thinkphp-509-information-disclosure.yaml -o zhengfu.txt
 
 nuclei -l phpmywind.txt -t ./phpmywind-detect.yaml -no-update-templates
+```
+
+
+### 查看文件
+```
+head # 文件前十行
+tail # 文件后十行
+more # 分页查看
+less # 逐行查看
+vi # 查看编辑
 ```
