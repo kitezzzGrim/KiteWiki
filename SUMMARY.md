@@ -41,7 +41,7 @@
       * [后渗透](readme-1/shen-tou-ce-shi/an-quan-gong-ju/hou-shen-tou/README.md)
         * [系统远程控制工具](readme-1/shen-tou-ce-shi/an-quan-gong-ju/hou-shen-tou/xi-tong-yuan-cheng-kong-zhi-gong-ju/README.md)
           * [metasploit](readme-1/shen-tou-ce-shi/an-quan-gong-ju/hou-shen-tou/xi-tong-yuan-cheng-kong-zhi-gong-ju/metasploit.md)
-          * [Cobaltstrike](readme/shen-tou-ce-shi/an-quan-gong-ju/cobaltstrike.md)
+          * [Cobaltstrike](readme-1/shen-tou-ce-shi/an-quan-gong-ju/hou-shen-tou/xi-tong-yuan-cheng-kong-zhi-gong-ju/cobaltstrike.md)
         * [网络端口转发工具](readme-1/shen-tou-ce-shi/an-quan-gong-ju/hou-shen-tou/wang-luo-duan-kou-zhuan-fa-gong-ju.md)
       * [哈希爆破](readme-1/shen-tou-ce-shi/an-quan-gong-ju/ha-xi-bao-po/README.md)
         * [Hashcat](readme-1/shen-tou-ce-shi/an-quan-gong-ju/hashcat.md)
