@@ -96,6 +96,14 @@ sleep 1
 
 ##### 利用Cross2上线linux主机
 
+Cross C2是一个支持Linux & MacOS系统的拓展插件，支持用户自定义生成的动态库，以无文件落地的方式从内存中加载执行动态库或可执行文件。
+
+简而言之：一个CS的简单小插件，目的就是上线Linux主机， 可做一些简单的操作，记录一下使用过程中遇到的一些问题，并且在使用中操作的正确性。
+
+- 项目地址：https://github.com/gloxec/CrossC2
+
+- kali下配置cross2：https://www.cnblogs.com/xuanlvsec/p/14240479.html
+
 ## 参考链接
 
 * ffffffff0x团队-1earn的CobaltStrike教程：https://github.com/ffffffff0x/1earn/blob/b068ec66544975f03160088fcca375e95768b198/1earn/Security/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%85%B7/CobaltStrike.md
