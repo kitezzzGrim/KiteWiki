@@ -36,7 +36,7 @@ Cobalt Strike是一款渗透测试神器，常被业界人称为CS神器。Cobal
 ./teamserver 10.30.0.95 123456
 ```
 
-![image](../../../../../readme/shen-tou-ce-shi/an-quan-gong-ju/img/cobaltstrike-1.png)
+![image](img/cobaltstrike-1.png)
 
 * 客户端CobaltStrike
 
@@ -44,27 +44,27 @@ Cobalt Strike是一款渗透测试神器，常被业界人称为CS神器。Cobal
  ./cobaltstrike
 ```
 
-![image](../../../../../readme/shen-tou-ce-shi/an-quan-gong-ju/img/cobaltstrike-2.png)
+![image](img/cobaltstrike-2.png)
 
 填写团队服务器的IP地址、端口号、用户名、密码，这里的用户名任意填写、不能是已经登录的用户名。端口号默认为50050
 
-![image](../../../../../readme/shen-tou-ce-shi/an-quan-gong-ju/img/cobaltstrike-3.png)
+![image](img/cobaltstrike-3.png)
 
 **连接多个团队服务器**
 
 Cobalt Strike → New Connection
 
-![image](../../../../../readme/shen-tou-ce-shi/an-quan-gong-ju/img/cobaltstrike-4.png)
+![image](img/cobaltstrike-4.png)
 
 ### 上线一个目标
 
 * 首先配置一个监听器：CobaltStrike->Linteners->Add
 
-![image](../../../../../readme/shen-tou-ce-shi/an-quan-gong-ju/img/cobaltstrike-5.png)
+![image](img/cobaltstrike-5.png)
 
 * 生成一个payload：Attacks->Packages->Windows Executable
 
-![image](../../../../../readme/shen-tou-ce-shi/an-quan-gong-ju/img/cobaltstrike-6.png)
+![image](img/cobaltstrike-6.png)
 
 * 然后生成的dll上传到目标机器Windows，执行命令：
 
@@ -72,7 +72,7 @@ Cobalt Strike → New Connection
 rundll32.exe artifact.dll Start
 ```
 
-![image](../../../../../readme/shen-tou-ce-shi/an-quan-gong-ju/img/cobaltstrike-7.png)
+![image](img/cobaltstrike-7.png)
 
 可以看到目标上线成功，右键interact可执行命令
 
