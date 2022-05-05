@@ -78,6 +78,7 @@
   * [代码审计](readme-1/dai-ma-shen-ji/README.md)
     * [PHP](readme-1/dai-ma-shen-ji/php/README.md)
       * [通达](readme-1/dai-ma-shen-ji/php/tong-da.md)
+    * [Java](readme-1/dai-ma-shen-ji/java.md)
   * [Linux笔记](readme-1/linux-bi-ji/README.md)
     * [查看文件](readme-1/linux-bi-ji/cha-kan-wen-jian.md)
   * [CTF](readme-1/ctf-bi-ji/README.md)
@@ -97,3 +98,4 @@
       * [DC 9](readme-1/ba-ji-shen-tou/vulnhub/dc-9.md)
       * [Sumo 脏牛提权](readme-1/ba-ji-shen-tou/vulnhub/sumo-zang-niu-ti-quan.md)
     * [Pikachu](readme-1/ba-ji-shen-tou/pikachu.md)
+    * [vulhub](readme-1/ba-ji-shen-tou/vulhub.md)
