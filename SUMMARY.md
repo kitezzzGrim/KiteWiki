@@ -79,7 +79,7 @@
     * [PHP](readme-1/dai-ma-shen-ji/php/README.md)
       * [通达](readme-1/dai-ma-shen-ji/php/tong-da.md)
     * [Java](readme-1/dai-ma-shen-ji/java.md)
-  * [Linux笔记](readme-1/linux-bi-ji/README.md)
+  * [Linux-speed](readme-1/linux-bi-ji/README.md)
     * [查看文件](readme-1/linux-bi-ji/cha-kan-wen-jian.md)
   * [CTF](readme-1/ctf-bi-ji/README.md)
     * [MISC](readme-1/ctf-bi-ji/misc.md)
