@@ -45,6 +45,8 @@
         * [网络端口转发工具](readme-1/shen-tou-ce-shi/an-quan-gong-ju/hou-shen-tou/wang-luo-duan-kou-zhuan-fa-gong-ju.md)
       * [哈希爆破](readme-1/shen-tou-ce-shi/an-quan-gong-ju/ha-xi-bao-po/README.md)
         * [Hashcat](readme-1/shen-tou-ce-shi/an-quan-gong-ju/hashcat.md)
+      * [数据库](readme-1/shen-tou-ce-shi/an-quan-gong-ju/shu-ju-ku/README.md)
+        * [Navicat](readme-1/shen-tou-ce-shi/an-quan-gong-ju/shu-ju-ku/navicat.md)
     * [移动测试](readme/shen-tou-ce-shi/yi-dong-ce-shi/README.md)
       * [小程序反编译](readme/shen-tou-ce-shi/yi-dong-ce-shi/xiao-cheng-xu-fan-bian-yi.md)
       * [APP反编译](readme/shen-tou-ce-shi/yi-dong-ce-shi/app-fan-bian-yi.md)
