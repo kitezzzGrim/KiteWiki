@@ -57,6 +57,28 @@ nmap -p- -T5 10.16.104.244 -o web
 
 ## 防守方视角
 
+1.断网
+
+![](./img/oracle-weblogic-6.png)
+
+2.杀毒
+
+![](./img/oracle-weblogic-7.png)
+
+![](./img/oracle-weblogic-8.png)
+
+3.防火墙
+
+
+启动防火墙 绿色为成功启动
+```
+systemctl start ufw
+
+systemctl status ufw
+```
+
+![](./img/oracle-weblogic-9.png)
+
 ## 参考链接
 
 - https://cdmana.com/2021/12/20211207014823186M.html
