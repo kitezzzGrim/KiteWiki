@@ -1,4 +1,4 @@
-# Linux笔记
+# Linux-speed
 
 * firewalld or ufw
 * bash反弹shell
@@ -418,7 +418,6 @@ find / -name flag.txt -exec cat '{}' \;
 
 ```bash
 
-
 nuclei -l 2.txt -t ./template/ -o results.txt
 
 nuclei -l 2.txt -t ./ -o results.txt
@@ -430,8 +429,8 @@ nuclei -l zhengfu.txt -t ./template/thinkphp-509-information-disclosure.yaml -o 
 nuclei -l phpmywind.txt -t ./phpmywind-detect.yaml -no-update-templates
 ```
 
-
 ### 查看文件
+
 ```
 head # 文件前十行
 tail # 文件后十行
