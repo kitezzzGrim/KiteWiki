@@ -69,6 +69,8 @@
             * [内核漏洞-备忘录](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/quan-xian-ti-sheng/xi-tong-ti-quan/linux-ti-quan/nei-he-lou-dong-bei-wang-lu.md)
         * [数据库提权](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/quan-xian-ti-sheng/shu-ju-ku-ti-quan/README.md)
           * [Mysql](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/quan-xian-ti-sheng/shu-ju-ku-ti-quan/mysql.md)
+          * [MSSQL](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/quan-xian-ti-sheng/shu-ju-ku-ti-quan/mssql.md)
+          * [PostgreSQL](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/quan-xian-ti-sheng/shu-ju-ku-ti-quan/postgresql.md)
       * [代理转发](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/dai-li-zhuan-fa/README.md)
         * [SSH隧道](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/dai-li-zhuan-fa/ssh-sui-dao.md)
         * [LCX端口转发](readme-1/shen-tou-ce-shi/heng-xiang-yi-dong/dai-li-zhuan-fa/lcx-duan-kou-zhuan-fa.md)
