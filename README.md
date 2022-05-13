@@ -22,6 +22,6 @@
     - Eat Delicious Food
     ......
 - Contact me
-    - 292826387@qq.com 👼
+    - ntwyc@outlook.com 👼
 
 ![kitezzzGrim](https://github-readme-stats.vercel.app/api?username=kitezzzGrim&theme=react&show_icons=true)
