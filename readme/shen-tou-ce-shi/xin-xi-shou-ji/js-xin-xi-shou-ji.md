@@ -4,6 +4,10 @@
 
 快速获取JS中的URL链接、接口、手机号、IP、域名等，无需一个个打开JS查看
 
+
+
+JS常见敏感关键字：admin、config、password、token、email、.conf
+
 ### JSFinder
 
 项目地址：https://github.com/Threezh1/JSFinder
